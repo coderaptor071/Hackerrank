@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+#include<algorithm>
+
+using namespace std;
+
+
+int main()
+{
+    vector<int> arr;
+    int data;
+    
+    long max,min,sum=0;
+    
+    for(unsigned int i=0;i<5;i++){
+        cin>>data;
+        arr.push_back(data);
+    }
+  for(unsigned int j=0;j<5;j++){
+      sum+=arr.at(j);
+      
+    }
+    sort(arr.begin(),arr.end());
+    max=sum-arr.at(0);
+    min=sum-arr.at(4);
+    cout<<min<<" "<<max;
+
+
+
+}
